@@ -1,0 +1,10 @@
+[{
+    "text": "ir a la compra",
+    "completed": false
+},{
+    "text": "llevar trastos al punto limpio",
+    "completed": false
+},{
+    "text": "recoger habitacion",
+    "completed": true
+}]

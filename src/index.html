@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple TODO Application</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .strike {
+        text-decoration: line-through;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="todo-app" class="container">
+        <div class="page-header">
+            <h1>TODO Application</h1>
+        </div>
+        <div class="row">
+            <div class="form-inline">
+                <input type="text" name="task-text" class="form-control" autofocus placeholder="description task" style="width: 395px;">
+                <button id="add-task" class="btn btn-default">Add task</button>
+                <button id="toggle-visibility" class="btn btn-default">Hide tasks</button>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px;">
+            <div class="panel panel-default col-md-6">
+                <div id="todo-panel" class="panel-body">
+                    <div id="todo-list"></div>
+                    <button id="completed-all-tasks" class="btn btn-default">Completed all tasks</button>
+                    <button id="remove-all-completed" class="btn btn-default">Delete all task completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="bower_components/requirejs/require.js" data-main="js/main.js"></script>
+</body>
+
+</html>
